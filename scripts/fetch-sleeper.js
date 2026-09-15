@@ -44,7 +44,8 @@ function playerSummary(playerId, players) {
   }
 
   const player = players[playerId] ?? {};
-  const fullName = player.full_name ?? [player.first_name, player.last_name].filter(Boolean).join(' ') || playerId;
+  const derivedName = [player.first_name, player.last_name].filter(Boolean).join(' ');
+  const fullName = player.full_name ?? (derivedName || playerId);
 
   return {
     id: playerId,
@@ -197,7 +198,7 @@ const availablePlayers = Object.entries(allPlayers)
     return (positionOrder[a.position] ?? 99) - (positionOrder[b.position] ?? 99) || a.name.localeCompare(b.name);
   });
 
-const defenses = Array.from({ length: 0 });
+const defenses = [];
 const nflTeams = new Set(
   Object.values(allPlayers)
     .map((player) => player?.team)
