@@ -1,0 +1,12 @@
+{
+  "name": "sleeper-fantasy-data",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-sleeper.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
