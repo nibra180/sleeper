@@ -28,6 +28,16 @@ function sumFantasyPointsAgainst(settings = {}) {
   return whole + decimal;
 }
 
+function rosterPlayerIds(roster = {}) {
+  return [...new Set([
+    ...(roster.players ?? []),
+    ...(roster.starters ?? []),
+    ...(roster.reserve ?? []),
+    ...(roster.taxi ?? []),
+    ...(roster.keepers ?? []),
+  ].filter(Boolean))];
+}
+
 function playerSummary(playerId, players) {
   if (!playerId) return null;
 
@@ -119,7 +129,7 @@ const normalizedRosters = rosters.map((roster) => {
   const starters = roster.starters ?? [];
   const reserve = roster.reserve ?? [];
   const taxi = roster.taxi ?? [];
-  const players = roster.players ?? [];
+  const players = rosterPlayerIds(roster);
   const starterSet = new Set(starters);
   const reserveSet = new Set(reserve);
   const taxiSet = new Set(taxi);
@@ -194,7 +204,20 @@ const myMatchup = myRoster
   ? normalizedMatchups.find((matchup) => matchup.teams.some((team) => team.rosterId === myRoster.rosterId)) ?? null
   : null;
 
-const rosteredPlayerIds = new Set(rosters.flatMap((roster) => roster.players ?? []));
+const ownershipByPlayerId = new Map();
+for (const roster of rosters) {
+  const normalized = rosterById.get(roster.roster_id);
+  for (const playerId of rosterPlayerIds(roster)) {
+    ownershipByPlayerId.set(playerId, {
+      rosterId: roster.roster_id,
+      teamName: normalized?.teamName ?? `Roster ${roster.roster_id}`,
+      displayName: normalized?.displayName ?? null,
+      username: normalized?.username ?? null,
+    });
+  }
+}
+
+const rosteredPlayerIds = new Set(ownershipByPlayerId.keys());
 const fantasyPositions = new Set(['QB', 'RB', 'WR', 'TE', 'K']);
 const availablePlayerLimits = {
   QB: 12,
@@ -295,16 +318,24 @@ const transactions = transactionSets
   .map((transaction) => normalizeTransaction(transaction, rosterById, allPlayers));
 
 const trending = {
-  adds: trendingAdds.map((entry) => ({
-    count: entry.count,
-    player: playerSummary(entry.player_id, allPlayers),
-    availableInLeague: !rosteredPlayerIds.has(entry.player_id),
-  })),
-  drops: trendingDrops.map((entry) => ({
-    count: entry.count,
-    player: playerSummary(entry.player_id, allPlayers),
-    availableInLeague: !rosteredPlayerIds.has(entry.player_id),
-  })),
+  adds: trendingAdds.map((entry) => {
+    const ownership = ownershipByPlayerId.get(entry.player_id) ?? null;
+    return {
+      count: entry.count,
+      player: playerSummary(entry.player_id, allPlayers),
+      unrosteredInLeague: !ownership,
+      ownership,
+    };
+  }),
+  drops: trendingDrops.map((entry) => {
+    const ownership = ownershipByPlayerId.get(entry.player_id) ?? null;
+    return {
+      count: entry.count,
+      player: playerSummary(entry.player_id, allPlayers),
+      unrosteredInLeague: !ownership,
+      ownership,
+    };
+  }),
 };
 
 const output = {
@@ -331,9 +362,13 @@ const output = {
   standings,
   rosters: normalizedRosters,
   recentTransactions: transactions,
+  ownership: {
+    ownedPlayerCount: rosteredPlayerIds.size,
+    note: 'Unrostered means no current roster ownership was found. Sleeper may still place an unrostered player on waivers, so this is not a guarantee of immediate free-agent addability.',
+  },
   trending,
   availablePlayers: {
-    strategy: 'Trending adds first, then depth-chart priority; limits are per position. All available D/ST are included.',
+    strategy: 'Unrostered players only. Trending adds first, then depth-chart priority; limits are per position. All unrostered D/ST are included.',
     limits: availablePlayerLimits,
     byPosition: availablePlayersByPosition,
     additionalTrending: trendingAvailablePlayers,
@@ -347,4 +382,5 @@ await writeFile('data/league-state.json', `${JSON.stringify(output, null, 2)}\n`
 
 console.log(`Wrote data/league-state.json for league ${LEAGUE_ID}, week ${currentWeek}.`);
 console.log(`My roster: ${myRoster?.teamName ?? 'not found'} (${MY_USERNAME})`);
-console.log(`Relevant available fantasy players: ${relevantAvailablePlayers.length}`);
+console.log(`Owned players detected: ${rosteredPlayerIds.size}`);
+console.log(`Relevant unrostered fantasy players: ${relevantAvailablePlayers.length}`);
