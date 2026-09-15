@@ -205,15 +205,67 @@ const myMatchup = myRoster
   : null;
 
 const ownershipByPlayerId = new Map();
+const ownershipForRoster = (rosterId, source, slot = null) => {
+  const normalized = rosterById.get(Number(rosterId));
+  return {
+    rosterId: Number(rosterId),
+    teamName: normalized?.teamName ?? `Roster ${rosterId}`,
+    displayName: normalized?.displayName ?? null,
+    username: normalized?.username ?? null,
+    source,
+    slot,
+  };
+};
+
+// Primary source: league roster endpoint.
 for (const roster of rosters) {
-  const normalized = rosterById.get(roster.roster_id);
+  const starterSet = new Set(roster.starters ?? []);
+  const reserveSet = new Set(roster.reserve ?? []);
+  const taxiSet = new Set(roster.taxi ?? []);
+
   for (const playerId of rosterPlayerIds(roster)) {
-    ownershipByPlayerId.set(playerId, {
-      rosterId: roster.roster_id,
-      teamName: normalized?.teamName ?? `Roster ${roster.roster_id}`,
-      displayName: normalized?.displayName ?? null,
-      username: normalized?.username ?? null,
-    });
+    const slot = starterSet.has(playerId)
+      ? 'starter'
+      : reserveSet.has(playerId)
+        ? 'reserve'
+        : taxiSet.has(playerId)
+          ? 'taxi'
+          : 'bench';
+    ownershipByPlayerId.set(playerId, ownershipForRoster(roster.roster_id, 'roster_endpoint', slot));
+  }
+}
+
+// Conservative fallback: current-week matchup snapshots can contain players that are
+// visible in the Sleeper app even when the roster endpoint temporarily omits them.
+for (const matchup of matchups) {
+  const starterSet = new Set(matchup.starters ?? []);
+  for (const playerId of matchup.players ?? []) {
+    if (!ownershipByPlayerId.has(playerId)) {
+      ownershipByPlayerId.set(
+        playerId,
+        ownershipForRoster(matchup.roster_id, 'matchup_snapshot', starterSet.has(playerId) ? 'starter' : 'bench'),
+      );
+    }
+  }
+}
+
+// Reconcile the fallback with completed transactions. Processing oldest to newest
+// means a later drop removes stale snapshot ownership and a later add restores it.
+const completedTransactions = transactionSets
+  .flat()
+  .filter((transaction) => transaction.status === 'complete')
+  .sort((a, b) => (a.created ?? 0) - (b.created ?? 0));
+
+for (const transaction of completedTransactions) {
+  for (const [playerId, rosterId] of Object.entries(transaction.drops ?? {})) {
+    const currentOwnership = ownershipByPlayerId.get(playerId);
+    if (!currentOwnership || currentOwnership.rosterId === Number(rosterId)) {
+      ownershipByPlayerId.delete(playerId);
+    }
+  }
+
+  for (const [playerId, rosterId] of Object.entries(transaction.adds ?? {})) {
+    ownershipByPlayerId.set(playerId, ownershipForRoster(rosterId, 'completed_transaction', 'bench'));
   }
 }
 
@@ -338,6 +390,10 @@ const trending = {
   }),
 };
 
+const ownershipObject = Object.fromEntries(
+  [...ownershipByPlayerId.entries()].sort(([a], [b]) => a.localeCompare(b)),
+);
+
 const output = {
   generatedAt: new Date().toISOString(),
   source: {
@@ -364,11 +420,12 @@ const output = {
   recentTransactions: transactions,
   ownership: {
     ownedPlayerCount: rosteredPlayerIds.size,
-    note: 'Unrostered means no current roster ownership was found. Sleeper may still place an unrostered player on waivers, so this is not a guarantee of immediate free-agent addability.',
+    byPlayerId: ownershipObject,
+    note: 'Ownership reconciles the roster endpoint with the current-week matchup snapshot and completed transactions. unrostered means no ownership was found after reconciliation; Sleeper may still place an unrostered player on waivers.',
   },
   trending,
   availablePlayers: {
-    strategy: 'Unrostered players only. Trending adds first, then depth-chart priority; limits are per position. All unrostered D/ST are included.',
+    strategy: 'Reconciled unrostered players only. Trending adds first, then depth-chart priority; limits are per position. All unrostered D/ST are included.',
     limits: availablePlayerLimits,
     byPosition: availablePlayersByPosition,
     additionalTrending: trendingAvailablePlayers,
