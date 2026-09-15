@@ -151,7 +151,18 @@ const normalizedRosters = rosters.map((roster) => {
   return normalized;
 });
 
-const myUser = users.find((user) => user.username?.toLowerCase() === MY_USERNAME.toLowerCase());
+const identity = MY_USERNAME.toLowerCase();
+const myUser = users.find((user) => {
+  const candidates = [
+    user.username,
+    user.display_name,
+    user.metadata?.team_name,
+  ]
+    .filter(Boolean)
+    .map((value) => String(value).toLowerCase());
+
+  return candidates.includes(identity);
+});
 const myRoster = normalizedRosters.find((roster) => roster.ownerId === myUser?.user_id) ?? null;
 
 const matchupGroups = new Map();
@@ -170,6 +181,7 @@ const normalizedMatchups = [...matchupGroups.entries()].map(([matchupId, teams])
       rosterId: team.roster_id,
       teamName: roster?.teamName ?? `Roster ${team.roster_id}`,
       username: roster?.username ?? null,
+      displayName: roster?.displayName ?? null,
       points: team.points ?? 0,
       projectedPoints: team.custom_points ?? null,
       starters: enrichPlayerIds(team.starters ?? [], allPlayers),
@@ -218,6 +230,7 @@ const standings = [...normalizedRosters]
     rank: index + 1,
     rosterId: roster.rosterId,
     username: roster.username,
+    displayName: roster.displayName,
     teamName: roster.teamName,
     ...roster.record,
   }));
