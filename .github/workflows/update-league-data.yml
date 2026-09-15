@@ -43,6 +43,9 @@ jobs:
       - name: Check out repository
         if: steps.local_time.outputs.run == 'true'
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Set up Node.js
         if: steps.local_time.outputs.run == 'true'
@@ -71,4 +74,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: update Sleeper league data"
-          git push
+          git pull --rebase origin main
+          git push origin HEAD:main
