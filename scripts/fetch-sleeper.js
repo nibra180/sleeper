@@ -196,19 +196,66 @@ const myMatchup = myRoster
 
 const rosteredPlayerIds = new Set(rosters.flatMap((roster) => roster.players ?? []));
 const fantasyPositions = new Set(['QB', 'RB', 'WR', 'TE', 'K']);
+const availablePlayerLimits = {
+  QB: 12,
+  RB: 24,
+  WR: 30,
+  TE: 16,
+  K: 8,
+};
+const trendingAddCountByPlayerId = new Map(
+  trendingAdds.map((entry) => [entry.player_id, Number(entry.count ?? 0)]),
+);
 
-const availablePlayers = Object.entries(allPlayers)
+const availableCandidates = Object.entries(allPlayers)
   .filter(([playerId, player]) => {
     if (rosteredPlayerIds.has(playerId)) return false;
     if (!player?.active) return false;
     if (!fantasyPositions.has(player.position)) return false;
     return Boolean(player.team);
   })
-  .map(([playerId]) => playerSummary(playerId, allPlayers))
-  .sort((a, b) => {
-    const positionOrder = { QB: 0, RB: 1, WR: 2, TE: 3, K: 4 };
-    return (positionOrder[a.position] ?? 99) - (positionOrder[b.position] ?? 99) || a.name.localeCompare(b.name);
-  });
+  .map(([playerId]) => ({
+    ...playerSummary(playerId, allPlayers),
+    trendingAdds24h: trendingAddCountByPlayerId.get(playerId) ?? 0,
+  }));
+
+const compareAvailablePlayers = (a, b) => {
+  const trendingDifference = b.trendingAdds24h - a.trendingAdds24h;
+  if (trendingDifference !== 0) return trendingDifference;
+
+  const depthDifference = (a.depthChartOrder ?? 99) - (b.depthChartOrder ?? 99);
+  if (depthDifference !== 0) return depthDifference;
+
+  const injuryDifference = Number(Boolean(a.injuryStatus)) - Number(Boolean(b.injuryStatus));
+  if (injuryDifference !== 0) return injuryDifference;
+
+  return a.name.localeCompare(b.name);
+};
+
+const availablePlayersByPosition = Object.fromEntries(
+  Object.entries(availablePlayerLimits).map(([position, limit]) => [
+    position,
+    availableCandidates
+      .filter((player) => player.position === position)
+      .sort(compareAvailablePlayers)
+      .slice(0, limit),
+  ]),
+);
+
+const shortlistedPlayerIds = new Set(
+  Object.values(availablePlayersByPosition)
+    .flat()
+    .map((player) => player.id),
+);
+
+const trendingAvailablePlayers = trendingAdds
+  .filter((entry) => !rosteredPlayerIds.has(entry.player_id))
+  .map((entry) => ({
+    ...playerSummary(entry.player_id, allPlayers),
+    trendingAdds24h: Number(entry.count ?? 0),
+  }))
+  .filter((player) => player && player.team)
+  .filter((player) => !shortlistedPlayerIds.has(player.id));
 
 const defenses = [];
 const nflTeams = new Set(
@@ -219,6 +266,13 @@ const nflTeams = new Set(
 for (const team of nflTeams) {
   if (!rosteredPlayerIds.has(team)) defenses.push(playerSummary(team, allPlayers));
 }
+defenses.sort((a, b) => a.name.localeCompare(b.name));
+
+const relevantAvailablePlayers = [
+  ...Object.values(availablePlayersByPosition).flat(),
+  ...trendingAvailablePlayers,
+  ...defenses,
+].filter((player, index, players) => players.findIndex((candidate) => candidate.id === player.id) === index);
 
 const standings = [...normalizedRosters]
   .sort((a, b) =>
@@ -278,7 +332,14 @@ const output = {
   rosters: normalizedRosters,
   recentTransactions: transactions,
   trending,
-  availablePlayers: [...availablePlayers, ...defenses],
+  availablePlayers: {
+    strategy: 'Trending adds first, then depth-chart priority; limits are per position. All available D/ST are included.',
+    limits: availablePlayerLimits,
+    byPosition: availablePlayersByPosition,
+    additionalTrending: trendingAvailablePlayers,
+    defenses,
+    allRelevant: relevantAvailablePlayers,
+  },
 };
 
 await mkdir('data', { recursive: true });
@@ -286,4 +347,4 @@ await writeFile('data/league-state.json', `${JSON.stringify(output, null, 2)}\n`
 
 console.log(`Wrote data/league-state.json for league ${LEAGUE_ID}, week ${currentWeek}.`);
 console.log(`My roster: ${myRoster?.teamName ?? 'not found'} (${MY_USERNAME})`);
-console.log(`Available fantasy players: ${output.availablePlayers.length}`);
+console.log(`Relevant available fantasy players: ${relevantAvailablePlayers.length}`);
