@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T08:06:36.718Z",
+  "generatedAt": "2026-09-15T08:14:03.569Z",
   "source": {
     "provider": "Sleeper API",
     "leagueId": "1400190366010863616",
@@ -12983,7 +12983,1473 @@
   ],
   "ownership": {
     "ownedPlayerCount": 183,
-    "note": "Unrostered means no current roster ownership was found. Sleeper may still place an unrostered player on waivers, so this is not a guarantee of immediate free-agent addability."
+    "byPlayerId": {
+      "421": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "1466": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "2133": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "2216": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "2449": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "2747": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "3163": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "3198": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "3294": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "3451": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "4034": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "4035": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "4037": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "4046": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "4199": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "4217": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "4227": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "4866": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "4881": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "4981": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "4983": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "4984": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "5012": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "5022": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "5045": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "5189": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "5844": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "5846": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "5849": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "5850": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "5859": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "reserve"
+      },
+      "5872": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "5892": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "5927": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "5947": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "5967": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "5995": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "6770": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "6783": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "6786": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "6790": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "6794": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "6797": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "6801": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "6804": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "6806": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "6813": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "6819": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "6904": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "7021": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "7523": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "7525": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "7526": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "7543": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "7547": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "7553": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "7564": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "7567": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "7569": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "7571": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "7588": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "7594": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "7611": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "7839": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8110": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8112": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8121": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "8126": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "8130": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8131": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "8132": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "8134": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8136": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "8137": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8138": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8142": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "8144": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8146": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8148": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8150": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8151": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8154": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "8155": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8167": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8183": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "8205": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "reserve"
+      },
+      "8228": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8259": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "8408": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "8800": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "9221": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "9224": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "9225": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "9226": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "9482": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "9484": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "9487": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "9488": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "9493": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "9500": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "9502": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "9504": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "9508": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "9509": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "9753": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "reserve"
+      },
+      "9754": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "9756": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "9997": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "10213": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "10219": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "10222": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "10229": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "10232": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "10235": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "10236": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "10859": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "11533": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "11539": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "11560": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "11563": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "11564": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "11566": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "11581": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "11583": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "11584": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "11586": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "11604": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "11620": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "11624": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "11625": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "11628": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "11631": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "11632": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "11635": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "11646": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "11786": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "12015": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "12469": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "12474": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "12481": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "12489": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "12490": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "12501": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "12504": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "12506": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "12507": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "12508": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "12512": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "12514": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "12517": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "12518": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "12519": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "12526": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "12527": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "12529": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "12530": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "12533": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "12534": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "12545": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "12711": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "13279": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "13281": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "reserve"
+      },
+      "13286": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "13287": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "13294": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "13298": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "13305": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "13337": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "13346": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "13417": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "bench"
+      },
+      "13545": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "roster_endpoint",
+        "slot": "starter"
+      },
+      "BAL": {
+        "rosterId": 10,
+        "teamName": "Polk High 33",
+        "displayName": "nibra180",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "DEN": {
+        "rosterId": 5,
+        "teamName": "Gronbraunski",
+        "displayName": "Gronbraunski",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "GB": {
+        "rosterId": 8,
+        "teamName": "MatthiasvilleMagic",
+        "displayName": "MatthiasvilleMagic",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "HOU": {
+        "rosterId": 6,
+        "teamName": "Xyz",
+        "displayName": "Xyt",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "JAX": {
+        "rosterId": 4,
+        "teamName": "Ragenus",
+        "displayName": "Ragenus",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "KC": {
+        "rosterId": 7,
+        "teamName": "Windhorst Monkeys",
+        "displayName": "Bernd3",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "LAC": {
+        "rosterId": 9,
+        "teamName": "ParosPower",
+        "displayName": "ParosPower",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "LAR": {
+        "rosterId": 12,
+        "teamName": "LastrupMudDogs",
+        "displayName": "LastrupMudDogs",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "LV": {
+        "rosterId": 2,
+        "teamName": "StribClub",
+        "displayName": "NewYorkMetts",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "PHI": {
+        "rosterId": 1,
+        "teamName": "Chase & Pray",
+        "displayName": "EliHoF",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "PIT": {
+        "rosterId": 11,
+        "teamName": "MrInterception",
+        "displayName": "MrInterception",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      },
+      "SEA": {
+        "rosterId": 3,
+        "teamName": "MeniskusFC",
+        "displayName": "MeniskusFC",
+        "username": null,
+        "source": "completed_transaction",
+        "slot": "bench"
+      }
+    },
+    "note": "Ownership reconciles the roster endpoint with the current-week matchup snapshot and completed transactions. unrostered means no ownership was found after reconciliation; Sleeper may still place an unrostered player on waivers."
   },
   "trending": {
     "adds": [
@@ -13237,7 +14703,9 @@
           "rosterId": 10,
           "teamName": "Polk High 33",
           "displayName": "nibra180",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -13290,7 +14758,9 @@
           "rosterId": 4,
           "teamName": "Ragenus",
           "displayName": "Ragenus",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -13391,7 +14861,9 @@
           "rosterId": 11,
           "teamName": "MrInterception",
           "displayName": "MrInterception",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -13492,7 +14964,9 @@
           "rosterId": 3,
           "teamName": "MeniskusFC",
           "displayName": "MeniskusFC",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -13521,7 +14995,9 @@
           "rosterId": 12,
           "teamName": "LastrupMudDogs",
           "displayName": "LastrupMudDogs",
-          "username": null
+          "username": null,
+          "source": "completed_transaction",
+          "slot": "bench"
         }
       },
       {
@@ -13550,7 +15026,9 @@
           "rosterId": 1,
           "teamName": "Chase & Pray",
           "displayName": "EliHoF",
-          "username": null
+          "username": null,
+          "source": "completed_transaction",
+          "slot": "bench"
         }
       },
       {
@@ -13579,7 +15057,9 @@
           "rosterId": 2,
           "teamName": "StribClub",
           "displayName": "NewYorkMetts",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -13632,7 +15112,9 @@
           "rosterId": 11,
           "teamName": "MrInterception",
           "displayName": "MrInterception",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "starter"
         }
       },
       {
@@ -13685,7 +15167,9 @@
           "rosterId": 7,
           "teamName": "Windhorst Monkeys",
           "displayName": "Bernd3",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -13714,7 +15198,9 @@
           "rosterId": 8,
           "teamName": "MatthiasvilleMagic",
           "displayName": "MatthiasvilleMagic",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -13767,7 +15253,9 @@
           "rosterId": 6,
           "teamName": "Xyz",
           "displayName": "Xyt",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -13868,7 +15356,9 @@
           "rosterId": 11,
           "teamName": "MrInterception",
           "displayName": "MrInterception",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -13897,7 +15387,9 @@
           "rosterId": 2,
           "teamName": "StribClub",
           "displayName": "NewYorkMetts",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "starter"
         }
       },
       {
@@ -13998,7 +15490,9 @@
           "rosterId": 10,
           "teamName": "Polk High 33",
           "displayName": "nibra180",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "starter"
         }
       },
       {
@@ -14124,7 +15618,9 @@
           "rosterId": 8,
           "teamName": "MatthiasvilleMagic",
           "displayName": "MatthiasvilleMagic",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "starter"
         }
       },
       {
@@ -14153,7 +15649,9 @@
           "rosterId": 3,
           "teamName": "MeniskusFC",
           "displayName": "MeniskusFC",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -14182,7 +15680,9 @@
           "rosterId": 4,
           "teamName": "Ragenus",
           "displayName": "Ragenus",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "starter"
         }
       },
       {
@@ -14211,7 +15711,9 @@
           "rosterId": 7,
           "teamName": "Windhorst Monkeys",
           "displayName": "Bernd3",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -14240,7 +15742,9 @@
           "rosterId": 1,
           "teamName": "Chase & Pray",
           "displayName": "EliHoF",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "starter"
         }
       },
       {
@@ -14295,7 +15799,9 @@
           "rosterId": 2,
           "teamName": "StribClub",
           "displayName": "NewYorkMetts",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "starter"
         }
       },
       {
@@ -14324,7 +15830,9 @@
           "rosterId": 2,
           "teamName": "StribClub",
           "displayName": "NewYorkMetts",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -14345,7 +15853,9 @@
           "rosterId": 4,
           "teamName": "Ragenus",
           "displayName": "Ragenus",
-          "username": null
+          "username": null,
+          "source": "completed_transaction",
+          "slot": "bench"
         }
       },
       {
@@ -14374,7 +15884,9 @@
           "rosterId": 6,
           "teamName": "Xyz",
           "displayName": "Xyt",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -14403,7 +15915,9 @@
           "rosterId": 1,
           "teamName": "Chase & Pray",
           "displayName": "EliHoF",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -14432,7 +15946,9 @@
           "rosterId": 12,
           "teamName": "LastrupMudDogs",
           "displayName": "LastrupMudDogs",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -14485,7 +16001,9 @@
           "rosterId": 5,
           "teamName": "Gronbraunski",
           "displayName": "Gronbraunski",
-          "username": null
+          "username": null,
+          "source": "completed_transaction",
+          "slot": "bench"
         }
       },
       {
@@ -14514,7 +16032,9 @@
           "rosterId": 6,
           "teamName": "Xyz",
           "displayName": "Xyt",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -14567,7 +16087,9 @@
           "rosterId": 1,
           "teamName": "Chase & Pray",
           "displayName": "EliHoF",
-          "username": null
+          "username": null,
+          "source": "completed_transaction",
+          "slot": "bench"
         }
       },
       {
@@ -14596,7 +16118,9 @@
           "rosterId": 4,
           "teamName": "Ragenus",
           "displayName": "Ragenus",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -14625,7 +16149,9 @@
           "rosterId": 1,
           "teamName": "Chase & Pray",
           "displayName": "EliHoF",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -14694,7 +16220,9 @@
           "rosterId": 8,
           "teamName": "MatthiasvilleMagic",
           "displayName": "MatthiasvilleMagic",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -14715,7 +16243,9 @@
           "rosterId": 2,
           "teamName": "StribClub",
           "displayName": "NewYorkMetts",
-          "username": null
+          "username": null,
+          "source": "completed_transaction",
+          "slot": "bench"
         }
       },
       {
@@ -14768,7 +16298,9 @@
           "rosterId": 9,
           "teamName": "ParosPower",
           "displayName": "ParosPower",
-          "username": null
+          "username": null,
+          "source": "completed_transaction",
+          "slot": "bench"
         }
       },
       {
@@ -14797,7 +16329,9 @@
           "rosterId": 11,
           "teamName": "MrInterception",
           "displayName": "MrInterception",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -14826,7 +16360,9 @@
           "rosterId": 6,
           "teamName": "Xyz",
           "displayName": "Xyt",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "starter"
         }
       },
       {
@@ -14855,7 +16391,9 @@
           "rosterId": 7,
           "teamName": "Windhorst Monkeys",
           "displayName": "Bernd3",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "starter"
         }
       },
       {
@@ -14884,7 +16422,9 @@
           "rosterId": 12,
           "teamName": "LastrupMudDogs",
           "displayName": "LastrupMudDogs",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "starter"
         }
       },
       {
@@ -14913,7 +16453,9 @@
           "rosterId": 8,
           "teamName": "MatthiasvilleMagic",
           "displayName": "MatthiasvilleMagic",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -14942,7 +16484,9 @@
           "rosterId": 4,
           "teamName": "Ragenus",
           "displayName": "Ragenus",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -14995,7 +16539,9 @@
           "rosterId": 12,
           "teamName": "LastrupMudDogs",
           "displayName": "LastrupMudDogs",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "starter"
         }
       },
       {
@@ -15025,7 +16571,9 @@
           "rosterId": 6,
           "teamName": "Xyz",
           "displayName": "Xyt",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -15126,7 +16674,9 @@
           "rosterId": 7,
           "teamName": "Windhorst Monkeys",
           "displayName": "Bernd3",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -15155,7 +16705,9 @@
           "rosterId": 7,
           "teamName": "Windhorst Monkeys",
           "displayName": "Bernd3",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -15256,7 +16808,9 @@
           "rosterId": 7,
           "teamName": "Windhorst Monkeys",
           "displayName": "Bernd3",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -15285,7 +16839,9 @@
           "rosterId": 3,
           "teamName": "MeniskusFC",
           "displayName": "MeniskusFC",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -15314,7 +16870,9 @@
           "rosterId": 12,
           "teamName": "LastrupMudDogs",
           "displayName": "LastrupMudDogs",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "reserve"
         }
       },
       {
@@ -15343,7 +16901,9 @@
           "rosterId": 5,
           "teamName": "Gronbraunski",
           "displayName": "Gronbraunski",
-          "username": null
+          "username": null,
+          "source": "completed_transaction",
+          "slot": "bench"
         }
       },
       {
@@ -15396,7 +16956,9 @@
           "rosterId": 9,
           "teamName": "ParosPower",
           "displayName": "ParosPower",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -15497,7 +17059,9 @@
           "rosterId": 10,
           "teamName": "Polk High 33",
           "displayName": "nibra180",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -15550,7 +17114,9 @@
           "rosterId": 11,
           "teamName": "MrInterception",
           "displayName": "MrInterception",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "bench"
         }
       },
       {
@@ -15579,7 +17145,9 @@
           "rosterId": 10,
           "teamName": "Polk High 33",
           "displayName": "nibra180",
-          "username": null
+          "username": null,
+          "source": "roster_endpoint",
+          "slot": "starter"
         }
       },
       {
@@ -15609,7 +17177,7 @@
     ]
   },
   "availablePlayers": {
-    "strategy": "Unrostered players only. Trending adds first, then depth-chart priority; limits are per position. All unrostered D/ST are included.",
+    "strategy": "Reconciled unrostered players only. Trending adds first, then depth-chart priority; limits are per position. All unrostered D/ST are included.",
     "limits": {
       "QB": 12,
       "RB": 24,
