@@ -55,13 +55,14 @@ jobs:
         if: steps.local_time.outputs.run == 'true'
         shell: bash
         run: |
-          if git diff --quiet -- data/league-state.json; then
+          git add data/league-state.json
+
+          if git diff --cached --quiet; then
             echo "No data changes to commit."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/league-state.json
           git commit -m "chore: update Sleeper league data"
           git push
