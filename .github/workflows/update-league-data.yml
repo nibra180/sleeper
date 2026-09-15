@@ -1,0 +1,67 @@
+name: Update Sleeper league data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run both possible UTC offsets for 07:30 Europe/Berlin.
+    # The job itself only continues when local Berlin time is 07:30.
+    - cron: '30 5 * * *'
+    - cron: '30 6 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Berlin time
+        id: local_time
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          hour="$(TZ=Europe/Berlin date +%H)"
+          minute="$(TZ=Europe/Berlin date +%M)"
+
+          if [[ "$hour" == "07" && "$minute" == "30" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check out repository
+        if: steps.local_time.outputs.run == 'true'
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        if: steps.local_time.outputs.run == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch Sleeper data
+        if: steps.local_time.outputs.run == 'true'
+        env:
+          SLEEPER_LEAGUE_ID: '1400190366010863616'
+          SLEEPER_USERNAME: 'nibra180'
+        run: npm run fetch
+
+      - name: Commit updated data
+        if: steps.local_time.outputs.run == 'true'
+        shell: bash
+        run: |
+          if git diff --quiet -- data/league-state.json; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/league-state.json
+          git commit -m "chore: update Sleeper league data"
+          git push
