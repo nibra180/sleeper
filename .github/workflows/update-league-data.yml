@@ -2,9 +2,15 @@ name: Update Sleeper league data
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'package.json'
+      - '.github/workflows/update-league-data.yml'
   schedule:
     # Run both possible UTC offsets for 07:30 Europe/Berlin.
-    # The job itself only continues when local Berlin time is 07:30.
+    # Scheduled runs only continue when local Berlin time is 07:30.
     - cron: '30 5 * * *'
     - cron: '30 6 * * *'
 
@@ -20,7 +26,7 @@ jobs:
         id: local_time
         shell: bash
         run: |
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+          if [[ "${{ github.event_name }}" != "schedule" ]]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
