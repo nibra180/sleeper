@@ -9,17 +9,22 @@ on:
       - 'package.json'
       - '.github/workflows/update-league-data.yml'
   schedule:
-    # Run both possible UTC offsets for 07:30 Europe/Berlin.
-    # The guard below handles DST and delayed GitHub scheduler starts.
-    - cron: '30 5 * * *'
-    - cron: '30 6 * * *'
+    # Redundant morning checks. GitHub's scheduler can start jobs late,
+    # so we try every 15 minutes across the DST-safe UTC window.
+    # The guard below ensures only one successful refresh per Berlin day.
+    - cron: '*/15 4-7 * * *'
 
 permissions:
   contents: write
 
+concurrency:
+  group: update-sleeper-league-data
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Check out repository
@@ -32,6 +37,7 @@ jobs:
         id: refresh
         shell: bash
         run: |
+          # Manual dispatches and relevant pushes always refresh immediately.
           if [[ "${{ github.event_name }}" != "schedule" ]]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
             exit 0
@@ -52,8 +58,10 @@ jobs:
             exit 0
           fi
 
-          if [[ "$local_hm" < "0730" ]]; then
-            echo "Too early in Europe/Berlin ($local_hm); waiting for the later DST-safe cron."
+          # We want a fresh snapshot before the Fantasy Advisor starts around 08:00.
+          # 06:30 Berlin gives GitHub plenty of retry opportunities even when runs are delayed.
+          if [[ "$local_hm" < "0630" ]]; then
+            echo "Too early in Europe/Berlin ($local_hm); waiting for a later scheduled check."
             echo "run=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
