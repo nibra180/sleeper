@@ -8,6 +8,7 @@ on:
       - 'scripts/**'
       - 'package.json'
       - '.github/workflows/update-league-data.yml'
+      - '.github/sleeper-refresh-trigger.txt'
   schedule:
     # Redundant morning checks. GitHub's scheduler can start jobs late,
     # so we try every 15 minutes across the DST-safe UTC window.
