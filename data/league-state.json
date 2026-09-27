@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T07:07:11.040Z",
+  "generatedAt": "2026-09-27T07:07:52.037Z",
   "source": {
     "provider": "Sleeper API",
     "leagueId": "1400190366010863616",
@@ -15239,7 +15239,7 @@
   "trending": {
     "adds": [
       {
-        "count": 388456,
+        "count": 389992,
         "player": {
           "id": "12487",
           "name": "Terrance Ferguson",
@@ -15270,7 +15270,7 @@
         }
       },
       {
-        "count": 153000,
+        "count": 153696,
         "player": {
           "id": "11610",
           "name": "Malik Washington",
@@ -15301,7 +15301,7 @@
         }
       },
       {
-        "count": 134982,
+        "count": 135621,
         "player": {
           "id": "13337",
           "name": "Emmett Johnson",
@@ -15332,7 +15332,7 @@
         }
       },
       {
-        "count": 120820,
+        "count": 121415,
         "player": {
           "id": "10218",
           "name": "Xavier Hutchinson",
@@ -15356,7 +15356,7 @@
         "ownership": null
       },
       {
-        "count": 114399,
+        "count": 114732,
         "player": {
           "id": "2505",
           "name": "Darren Waller",
@@ -15380,7 +15380,7 @@
         "ownership": null
       },
       {
-        "count": 89580,
+        "count": 89910,
         "player": {
           "id": "4943",
           "name": "Sam Darnold",
@@ -15411,7 +15411,7 @@
         }
       },
       {
-        "count": 74640,
+        "count": 74976,
         "player": {
           "id": "6828",
           "name": "AJ Dillon",
@@ -15435,7 +15435,7 @@
         "ownership": null
       },
       {
-        "count": 70096,
+        "count": 70464,
         "player": {
           "id": "4035",
           "name": "Alvin Kamara",
@@ -15466,7 +15466,7 @@
         }
       },
       {
-        "count": 62992,
+        "count": 63136,
         "player": {
           "id": "1166",
           "name": "Kirk Cousins",
@@ -15490,7 +15490,7 @@
         "ownership": null
       },
       {
-        "count": 58208,
+        "count": 58432,
         "player": {
           "id": "11625",
           "name": "Adonai Mitchell",
@@ -15521,7 +15521,7 @@
         }
       },
       {
-        "count": 54606,
+        "count": 54948,
         "player": {
           "id": "11608",
           "name": "Isaiah Williams",
@@ -15545,7 +15545,7 @@
         "ownership": null
       },
       {
-        "count": 49856,
+        "count": 50904,
         "player": {
           "id": "3321",
           "name": "Tyreek Hill",
@@ -15569,7 +15569,7 @@
         "ownership": null
       },
       {
-        "count": 49776,
+        "count": 50048,
         "player": {
           "id": "6650",
           "name": "Chase McLaughlin",
@@ -15593,7 +15593,7 @@
         "ownership": null
       },
       {
-        "count": 49232,
+        "count": 49440,
         "player": {
           "id": "5849",
           "name": "Kyler Murray",
@@ -15624,7 +15624,7 @@
         }
       },
       {
-        "count": 47043,
+        "count": 47187,
         "player": {
           "id": "11435",
           "name": "Emanuel Wilson",
@@ -15655,7 +15655,7 @@
         }
       },
       {
-        "count": 45564,
+        "count": 45810,
         "player": {
           "id": "11256",
           "name": "Tyson Bagent",
@@ -15679,7 +15679,7 @@
         "ownership": null
       },
       {
-        "count": 44946,
+        "count": 45162,
         "player": {
           "id": "11637",
           "name": "Keon Coleman",
@@ -15703,7 +15703,7 @@
         "ownership": null
       },
       {
-        "count": 44298,
+        "count": 44505,
         "player": {
           "id": "8134",
           "name": "Khalil Shakir",
@@ -15734,7 +15734,7 @@
         }
       },
       {
-        "count": 44098,
+        "count": 44254,
         "player": {
           "id": "13423",
           "name": "Eli Heidenreich",
@@ -15758,7 +15758,7 @@
         "ownership": null
       },
       {
-        "count": 42408,
+        "count": 42664,
         "player": {
           "id": "NYG",
           "name": "NYG D/ST",
@@ -15774,7 +15774,7 @@
         "ownership": null
       },
       {
-        "count": 42168,
+        "count": 42464,
         "player": {
           "id": "6012",
           "name": "Travis Homer",
@@ -15798,7 +15798,7 @@
         "ownership": null
       },
       {
-        "count": 42138,
+        "count": 42291,
         "player": {
           "id": "5995",
           "name": "Justice Hill",
@@ -15829,7 +15829,7 @@
         }
       },
       {
-        "count": 37576,
+        "count": 37695,
         "player": {
           "id": "8188",
           "name": "Tyquan Thornton",
@@ -15853,7 +15853,7 @@
         "ownership": null
       },
       {
-        "count": 37200,
+        "count": 37340,
         "player": {
           "id": "12493",
           "name": "Oronde Gadsden",
@@ -15877,7 +15877,7 @@
         "ownership": null
       },
       {
-        "count": 36976,
+        "count": 37080,
         "player": {
           "id": "4017",
           "name": "Deshaun Watson",
@@ -15901,7 +15901,7 @@
         "ownership": null
       },
       {
-        "count": 35388,
+        "count": 35559,
         "player": {
           "id": "11624",
           "name": "Xavier Worthy",
@@ -15932,7 +15932,7 @@
         }
       },
       {
-        "count": 31743,
+        "count": 31860,
         "player": {
           "id": "1339",
           "name": "Zach Ertz",
@@ -15956,7 +15956,7 @@
         "ownership": null
       },
       {
-        "count": 29744,
+        "count": 29816,
         "player": {
           "id": "12545",
           "name": "Tyler Shough",
@@ -15987,7 +15987,7 @@
         }
       },
       {
-        "count": 28932,
+        "count": 28998,
         "player": {
           "id": "10213",
           "name": "Tre Tucker",
@@ -16018,7 +16018,7 @@
         }
       },
       {
-        "count": 26946,
+        "count": 27153,
         "player": {
           "id": "13330",
           "name": "Kenyon Sadiq",
@@ -16049,7 +16049,7 @@
         }
       },
       {
-        "count": 26559,
+        "count": 26661,
         "player": {
           "id": "9486",
           "name": "Dontayvion Wicks",
@@ -16080,7 +16080,7 @@
         }
       },
       {
-        "count": 25767,
+        "count": 25830,
         "player": {
           "id": "9511",
           "name": "Keaton Mitchell",
@@ -16111,7 +16111,7 @@
         }
       },
       {
-        "count": 24945,
+        "count": 25090,
         "player": {
           "id": "MIN",
           "name": "MIN D/ST",
@@ -16134,7 +16134,7 @@
         }
       },
       {
-        "count": 24640,
+        "count": 24856,
         "player": {
           "id": "8168",
           "name": "Skyy Moore",
@@ -16158,7 +16158,7 @@
         "ownership": null
       },
       {
-        "count": 23216,
+        "count": 23348,
         "player": {
           "id": "1373",
           "name": "Geno Smith",
@@ -16182,7 +16182,7 @@
         "ownership": null
       },
       {
-        "count": 22694,
+        "count": 22729,
         "player": {
           "id": "12501",
           "name": "Matthew Golden",
@@ -16213,7 +16213,7 @@
         }
       },
       {
-        "count": 21544,
+        "count": 21640,
         "player": {
           "id": "8121",
           "name": "Romeo Doubs",
@@ -16244,7 +16244,7 @@
         }
       },
       {
-        "count": 21020,
+        "count": 21092,
         "player": {
           "id": "12489",
           "name": "RJ Harvey",
@@ -16275,7 +16275,7 @@
         }
       },
       {
-        "count": 20426,
+        "count": 20524,
         "player": {
           "id": "9758",
           "name": "C.J. Stroud",
@@ -16299,7 +16299,7 @@
         "ownership": null
       },
       {
-        "count": 20421,
+        "count": 20511,
         "player": {
           "id": "5012",
           "name": "Mark Andrews",
@@ -16330,7 +16330,7 @@
         }
       },
       {
-        "count": 20412,
+        "count": 20502,
         "player": {
           "id": "DET",
           "name": "DET D/ST",
@@ -16346,7 +16346,7 @@
         "ownership": null
       },
       {
-        "count": 20259,
+        "count": 20376,
         "player": {
           "id": "13298",
           "name": "KC Concepcion",
@@ -16377,7 +16377,7 @@
         }
       },
       {
-        "count": 20195,
+        "count": 20300,
         "player": {
           "id": "11834",
           "name": "Devaughn Vele",
@@ -16408,7 +16408,7 @@
         }
       },
       {
-        "count": 19800,
+        "count": 19872,
         "player": {
           "id": "4227",
           "name": "Harrison Butker",
@@ -16439,7 +16439,7 @@
         }
       },
       {
-        "count": 19701,
+        "count": 19809,
         "player": {
           "id": "6130",
           "name": "Devin Singletary",
@@ -16463,7 +16463,7 @@
         "ownership": null
       },
       {
-        "count": 19302,
+        "count": 19398,
         "player": {
           "id": "LV",
           "name": "LV D/ST",
@@ -16479,7 +16479,7 @@
         "ownership": null
       },
       {
-        "count": 19019,
+        "count": 19075,
         "player": {
           "id": "9754",
           "name": "Quentin Johnston",
@@ -16510,7 +16510,7 @@
         }
       },
       {
-        "count": 18981,
+        "count": 19071,
         "player": {
           "id": "9756",
           "name": "Jordan Addison",
@@ -16541,7 +16541,7 @@
         }
       },
       {
-        "count": 18795,
+        "count": 18861,
         "player": {
           "id": "7571",
           "name": "Rashod Bateman",
@@ -16572,7 +16572,7 @@
         }
       },
       {
-        "count": 17280,
+        "count": 17400,
         "player": {
           "id": "7567",
           "name": "Kenny Gainwell",
@@ -17983,7 +17983,7 @@
           "depthChartOrder": 1,
           "yearsExp": 14,
           "age": 38,
-          "trendingAdds24h": 62992
+          "trendingAdds24h": 63136
         },
         {
           "id": "11256",
@@ -18003,7 +18003,7 @@
           "depthChartOrder": 1,
           "yearsExp": 3,
           "age": 26,
-          "trendingAdds24h": 45564
+          "trendingAdds24h": 45810
         },
         {
           "id": "4017",
@@ -18023,7 +18023,7 @@
           "depthChartOrder": 1,
           "yearsExp": 9,
           "age": 31,
-          "trendingAdds24h": 36976
+          "trendingAdds24h": 37080
         },
         {
           "id": "1373",
@@ -18043,7 +18043,7 @@
           "depthChartOrder": 1,
           "yearsExp": 13,
           "age": 35,
-          "trendingAdds24h": 23216
+          "trendingAdds24h": 23348
         },
         {
           "id": "9758",
@@ -18063,7 +18063,7 @@
           "depthChartOrder": 1,
           "yearsExp": 3,
           "age": 24,
-          "trendingAdds24h": 20426
+          "trendingAdds24h": 20524
         },
         {
           "id": "96",
@@ -18225,7 +18225,7 @@
           "depthChartOrder": 2,
           "yearsExp": 6,
           "age": 28,
-          "trendingAdds24h": 74640
+          "trendingAdds24h": 74976
         },
         {
           "id": "13423",
@@ -18245,7 +18245,7 @@
           "depthChartOrder": 2,
           "yearsExp": 0,
           "age": 23,
-          "trendingAdds24h": 44098
+          "trendingAdds24h": 44254
         },
         {
           "id": "6012",
@@ -18265,7 +18265,7 @@
           "depthChartOrder": 3,
           "yearsExp": 7,
           "age": 28,
-          "trendingAdds24h": 42168
+          "trendingAdds24h": 42464
         },
         {
           "id": "6130",
@@ -18285,7 +18285,7 @@
           "depthChartOrder": 2,
           "yearsExp": 7,
           "age": 29,
-          "trendingAdds24h": 19701
+          "trendingAdds24h": 19809
         },
         {
           "id": "8154",
@@ -18707,7 +18707,7 @@
           "depthChartOrder": 1,
           "yearsExp": 3,
           "age": 26,
-          "trendingAdds24h": 120820
+          "trendingAdds24h": 121415
         },
         {
           "id": "11608",
@@ -18727,7 +18727,7 @@
           "depthChartOrder": 3,
           "yearsExp": 2,
           "age": 25,
-          "trendingAdds24h": 54606
+          "trendingAdds24h": 54948
         },
         {
           "id": "11637",
@@ -18747,7 +18747,7 @@
           "depthChartOrder": 3,
           "yearsExp": 2,
           "age": 23,
-          "trendingAdds24h": 44946
+          "trendingAdds24h": 45162
         },
         {
           "id": "8188",
@@ -18767,7 +18767,7 @@
           "depthChartOrder": 3,
           "yearsExp": 4,
           "age": 26,
-          "trendingAdds24h": 37576
+          "trendingAdds24h": 37695
         },
         {
           "id": "8168",
@@ -18787,7 +18787,7 @@
           "depthChartOrder": 3,
           "yearsExp": 4,
           "age": 26,
-          "trendingAdds24h": 24640
+          "trendingAdds24h": 24856
         },
         {
           "id": "13311",
@@ -19309,7 +19309,7 @@
           "depthChartOrder": 1,
           "yearsExp": 11,
           "age": 34,
-          "trendingAdds24h": 114399
+          "trendingAdds24h": 114732
         },
         {
           "id": "12493",
@@ -19329,7 +19329,7 @@
           "depthChartOrder": 1,
           "yearsExp": 1,
           "age": 23,
-          "trendingAdds24h": 37200
+          "trendingAdds24h": 37340
         },
         {
           "id": "1339",
@@ -19349,7 +19349,7 @@
           "depthChartOrder": null,
           "yearsExp": 13,
           "age": 35,
-          "trendingAdds24h": 31743
+          "trendingAdds24h": 31860
         },
         {
           "id": "11603",
@@ -19631,7 +19631,7 @@
           "depthChartOrder": 1,
           "yearsExp": 7,
           "age": 30,
-          "trendingAdds24h": 49776
+          "trendingAdds24h": 50048
         },
         {
           "id": "11261",
@@ -19786,7 +19786,7 @@
         "fantasyPositions": [
           "DEF"
         ],
-        "trendingAdds24h": 42408
+        "trendingAdds24h": 42664
       },
       {
         "id": "DET",
@@ -19798,7 +19798,7 @@
         "fantasyPositions": [
           "DEF"
         ],
-        "trendingAdds24h": 20412
+        "trendingAdds24h": 20502
       },
       {
         "id": "LV",
@@ -19810,7 +19810,7 @@
         "fantasyPositions": [
           "DEF"
         ],
-        "trendingAdds24h": 19302
+        "trendingAdds24h": 19398
       }
     ],
     "defenses": [
@@ -20043,7 +20043,7 @@
         "depthChartOrder": 1,
         "yearsExp": 14,
         "age": 38,
-        "trendingAdds24h": 62992
+        "trendingAdds24h": 63136
       },
       {
         "id": "11256",
@@ -20063,7 +20063,7 @@
         "depthChartOrder": 1,
         "yearsExp": 3,
         "age": 26,
-        "trendingAdds24h": 45564
+        "trendingAdds24h": 45810
       },
       {
         "id": "4017",
@@ -20083,7 +20083,7 @@
         "depthChartOrder": 1,
         "yearsExp": 9,
         "age": 31,
-        "trendingAdds24h": 36976
+        "trendingAdds24h": 37080
       },
       {
         "id": "1373",
@@ -20103,7 +20103,7 @@
         "depthChartOrder": 1,
         "yearsExp": 13,
         "age": 35,
-        "trendingAdds24h": 23216
+        "trendingAdds24h": 23348
       },
       {
         "id": "9758",
@@ -20123,7 +20123,7 @@
         "depthChartOrder": 1,
         "yearsExp": 3,
         "age": 24,
-        "trendingAdds24h": 20426
+        "trendingAdds24h": 20524
       },
       {
         "id": "96",
@@ -20283,7 +20283,7 @@
         "depthChartOrder": 2,
         "yearsExp": 6,
         "age": 28,
-        "trendingAdds24h": 74640
+        "trendingAdds24h": 74976
       },
       {
         "id": "13423",
@@ -20303,7 +20303,7 @@
         "depthChartOrder": 2,
         "yearsExp": 0,
         "age": 23,
-        "trendingAdds24h": 44098
+        "trendingAdds24h": 44254
       },
       {
         "id": "6012",
@@ -20323,7 +20323,7 @@
         "depthChartOrder": 3,
         "yearsExp": 7,
         "age": 28,
-        "trendingAdds24h": 42168
+        "trendingAdds24h": 42464
       },
       {
         "id": "6130",
@@ -20343,7 +20343,7 @@
         "depthChartOrder": 2,
         "yearsExp": 7,
         "age": 29,
-        "trendingAdds24h": 19701
+        "trendingAdds24h": 19809
       },
       {
         "id": "8154",
@@ -20763,7 +20763,7 @@
         "depthChartOrder": 1,
         "yearsExp": 3,
         "age": 26,
-        "trendingAdds24h": 120820
+        "trendingAdds24h": 121415
       },
       {
         "id": "11608",
@@ -20783,7 +20783,7 @@
         "depthChartOrder": 3,
         "yearsExp": 2,
         "age": 25,
-        "trendingAdds24h": 54606
+        "trendingAdds24h": 54948
       },
       {
         "id": "11637",
@@ -20803,7 +20803,7 @@
         "depthChartOrder": 3,
         "yearsExp": 2,
         "age": 23,
-        "trendingAdds24h": 44946
+        "trendingAdds24h": 45162
       },
       {
         "id": "8188",
@@ -20823,7 +20823,7 @@
         "depthChartOrder": 3,
         "yearsExp": 4,
         "age": 26,
-        "trendingAdds24h": 37576
+        "trendingAdds24h": 37695
       },
       {
         "id": "8168",
@@ -20843,7 +20843,7 @@
         "depthChartOrder": 3,
         "yearsExp": 4,
         "age": 26,
-        "trendingAdds24h": 24640
+        "trendingAdds24h": 24856
       },
       {
         "id": "13311",
@@ -21363,7 +21363,7 @@
         "depthChartOrder": 1,
         "yearsExp": 11,
         "age": 34,
-        "trendingAdds24h": 114399
+        "trendingAdds24h": 114732
       },
       {
         "id": "12493",
@@ -21383,7 +21383,7 @@
         "depthChartOrder": 1,
         "yearsExp": 1,
         "age": 23,
-        "trendingAdds24h": 37200
+        "trendingAdds24h": 37340
       },
       {
         "id": "1339",
@@ -21403,7 +21403,7 @@
         "depthChartOrder": null,
         "yearsExp": 13,
         "age": 35,
-        "trendingAdds24h": 31743
+        "trendingAdds24h": 31860
       },
       {
         "id": "11603",
@@ -21683,7 +21683,7 @@
         "depthChartOrder": 1,
         "yearsExp": 7,
         "age": 30,
-        "trendingAdds24h": 49776
+        "trendingAdds24h": 50048
       },
       {
         "id": "11261",
@@ -21835,7 +21835,7 @@
         "fantasyPositions": [
           "DEF"
         ],
-        "trendingAdds24h": 42408
+        "trendingAdds24h": 42664
       },
       {
         "id": "DET",
@@ -21847,7 +21847,7 @@
         "fantasyPositions": [
           "DEF"
         ],
-        "trendingAdds24h": 20412
+        "trendingAdds24h": 20502
       },
       {
         "id": "LV",
@@ -21859,7 +21859,7 @@
         "fantasyPositions": [
           "DEF"
         ],
-        "trendingAdds24h": 19302
+        "trendingAdds24h": 19398
       },
       {
         "id": "ARI",
