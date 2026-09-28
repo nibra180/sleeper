@@ -10,10 +10,11 @@ on:
       - '.github/workflows/update-league-data.yml'
       - '.github/sleeper-refresh-trigger.txt'
   schedule:
-    # Redundant morning checks. GitHub's scheduler can start jobs late,
-    # so we try every 15 minutes across the DST-safe UTC window.
-    # The guard below ensures only one successful refresh per Berlin day.
-    - cron: '*/15 4-7 * * *'
+    # Run once every morning at 05:07 German local time.
+    # GitHub supports IANA time zones here, so DST is handled automatically.
+    # Using :07 instead of :00 reduces the risk of scheduler delays at the top of the hour.
+    - cron: '7 5 * * *'
+      timezone: 'Europe/Berlin'
 
 permissions:
   contents: write
@@ -34,57 +35,18 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Decide whether to refresh
-        id: refresh
-        shell: bash
-        run: |
-          # Manual dispatches and relevant pushes always refresh immediately.
-          if [[ "${{ github.event_name }}" != "schedule" ]]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          today="$(TZ=Europe/Berlin date +%F)"
-          local_hm="$(TZ=Europe/Berlin date +%H%M)"
-          generated_at="$(jq -r '.generatedAt // empty' data/league-state.json)"
-          generated_date=""
-
-          if [[ -n "$generated_at" ]]; then
-            generated_date="$(TZ=Europe/Berlin date -d "$generated_at" +%F 2>/dev/null || true)"
-          fi
-
-          if [[ "$generated_date" == "$today" ]]; then
-            echo "Sleeper data was already refreshed today ($generated_date)."
-            echo "run=false" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          # We want a fresh snapshot before the Fantasy Advisor starts around 08:00.
-          # 06:30 Berlin gives GitHub plenty of retry opportunities even when runs are delayed.
-          if [[ "$local_hm" < "0630" ]]; then
-            echo "Too early in Europe/Berlin ($local_hm); waiting for a later scheduled check."
-            echo "run=false" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          echo "Sleeper data is stale for today; refreshing now."
-          echo "run=true" >> "$GITHUB_OUTPUT"
-
       - name: Set up Node.js
-        if: steps.refresh.outputs.run == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '22'
 
       - name: Fetch Sleeper data
-        if: steps.refresh.outputs.run == 'true'
         env:
           SLEEPER_LEAGUE_ID: '1400190366010863616'
           SLEEPER_USERNAME: 'nibra180'
         run: npm run fetch
 
       - name: Commit updated data
-        if: steps.refresh.outputs.run == 'true'
         shell: bash
         run: |
           git add data/league-state.json
