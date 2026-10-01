@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T06:24:23.589Z",
+  "generatedAt": "2026-10-01T06:26:16.940Z",
   "source": {
     "provider": "Sleeper API",
     "leagueId": "1400190366010863616",
@@ -16643,7 +16643,7 @@
     ],
     "drops": [
       {
-        "count": 506889,
+        "count": 507528,
         "player": {
           "id": "10222",
           "name": "Jayden Reed",
@@ -16667,7 +16667,7 @@
         "ownership": null
       },
       {
-        "count": 478980,
+        "count": 479592,
         "player": {
           "id": "9226",
           "name": "De'Von Achane",
@@ -16698,7 +16698,7 @@
         }
       },
       {
-        "count": 415224,
+        "count": 415701,
         "player": {
           "id": "11581",
           "name": "MarShawn Lloyd",
@@ -16729,7 +16729,7 @@
         }
       },
       {
-        "count": 403512,
+        "count": 403912,
         "player": {
           "id": "12487",
           "name": "Terrance Ferguson",
@@ -16753,7 +16753,7 @@
         "ownership": null
       },
       {
-        "count": 388305,
+        "count": 388854,
         "player": {
           "id": "11435",
           "name": "Emanuel Wilson",
@@ -16784,7 +16784,7 @@
         }
       },
       {
-        "count": 259160,
+        "count": 259624,
         "player": {
           "id": "11625",
           "name": "Adonai Mitchell",
@@ -16815,7 +16815,7 @@
         }
       },
       {
-        "count": 255045,
+        "count": 255465,
         "player": {
           "id": "NE",
           "name": "NE D/ST",
@@ -16831,7 +16831,7 @@
         "ownership": null
       },
       {
-        "count": 254853,
+        "count": 255177,
         "player": {
           "id": "6130",
           "name": "Devin Singletary",
@@ -16855,7 +16855,7 @@
         "ownership": null
       },
       {
-        "count": 217530,
+        "count": 217818,
         "player": {
           "id": "8134",
           "name": "Khalil Shakir",
@@ -16886,7 +16886,7 @@
         }
       },
       {
-        "count": 203097,
+        "count": 203403,
         "player": {
           "id": "SF",
           "name": "SF D/ST",
@@ -16902,7 +16902,7 @@
         "ownership": null
       },
       {
-        "count": 197208,
+        "count": 197721,
         "player": {
           "id": "11637",
           "name": "Keon Coleman",
@@ -16926,7 +16926,7 @@
         "ownership": null
       },
       {
-        "count": 194082,
+        "count": 194341,
         "player": {
           "id": "9225",
           "name": "Tank Bigsby",
@@ -16957,7 +16957,7 @@
         }
       },
       {
-        "count": 184268,
+        "count": 184597,
         "player": {
           "id": "9754",
           "name": "Quentin Johnston",
@@ -16988,7 +16988,7 @@
         }
       },
       {
-        "count": 175743,
+        "count": 176022,
         "player": {
           "id": "5012",
           "name": "Mark Andrews",
@@ -17019,7 +17019,7 @@
         }
       },
       {
-        "count": 169192,
+        "count": 169504,
         "player": {
           "id": "13296",
           "name": "Caleb Douglas",
@@ -17050,7 +17050,7 @@
         }
       },
       {
-        "count": 166865,
+        "count": 167125,
         "player": {
           "id": "12493",
           "name": "Oronde Gadsden",
@@ -17074,7 +17074,7 @@
         "ownership": null
       },
       {
-        "count": 156510,
+        "count": 156816,
         "player": {
           "id": "1339",
           "name": "Zach Ertz",
@@ -17098,7 +17098,7 @@
         "ownership": null
       },
       {
-        "count": 152392,
+        "count": 152608,
         "player": {
           "id": "7567",
           "name": "Kenny Gainwell",
@@ -17129,7 +17129,7 @@
         }
       },
       {
-        "count": 150687,
+        "count": 150939,
         "player": {
           "id": "13337",
           "name": "Emmett Johnson",
@@ -17160,7 +17160,7 @@
         }
       },
       {
-        "count": 149958,
+        "count": 150174,
         "player": {
           "id": "DET",
           "name": "DET D/ST",
@@ -17176,7 +17176,7 @@
         "ownership": null
       },
       {
-        "count": 143328,
+        "count": 143656,
         "player": {
           "id": "8121",
           "name": "Romeo Doubs",
@@ -17207,7 +17207,7 @@
         }
       },
       {
-        "count": 141211,
+        "count": 141421,
         "player": {
           "id": "7553",
           "name": "Kyle Pitts",
@@ -17231,7 +17231,7 @@
         "ownership": null
       },
       {
-        "count": 138306,
+        "count": 138846,
         "player": {
           "id": "4037",
           "name": "Chris Godwin",
@@ -17262,7 +17262,7 @@
         }
       },
       {
-        "count": 136326,
+        "count": 136590,
         "player": {
           "id": "10213",
           "name": "Tre Tucker",
@@ -17293,7 +17293,7 @@
         }
       },
       {
-        "count": 132588,
+        "count": 132804,
         "player": {
           "id": "13298",
           "name": "KC Concepcion",
@@ -17324,7 +17324,7 @@
         }
       },
       {
-        "count": 132256,
+        "count": 132388,
         "player": {
           "id": "NYG",
           "name": "NYG D/ST",
@@ -17340,7 +17340,7 @@
         "ownership": null
       },
       {
-        "count": 122633,
+        "count": 122906,
         "player": {
           "id": "10218",
           "name": "Xavier Hutchinson",
@@ -17364,7 +17364,7 @@
         "ownership": null
       },
       {
-        "count": 122072,
+        "count": 122240,
         "player": {
           "id": "13545",
           "name": "Trey Smack",
@@ -17395,7 +17395,7 @@
         }
       },
       {
-        "count": 121625,
+        "count": 121821,
         "player": {
           "id": "13414",
           "name": "Kaelon Black",
@@ -17426,7 +17426,7 @@
         }
       },
       {
-        "count": 121122,
+        "count": 121293,
         "player": {
           "id": "11624",
           "name": "Xavier Worthy",
@@ -17457,7 +17457,7 @@
         }
       },
       {
-        "count": 120984,
+        "count": 121232,
         "player": {
           "id": "11539",
           "name": "Jake Bates",
@@ -17488,7 +17488,7 @@
         }
       },
       {
-        "count": 117256,
+        "count": 117424,
         "player": {
           "id": "5849",
           "name": "Kyler Murray",
@@ -17519,7 +17519,7 @@
         }
       },
       {
-        "count": 116570,
+        "count": 116785,
         "player": {
           "id": "11631",
           "name": "Brian Thomas",
@@ -17550,7 +17550,7 @@
         }
       },
       {
-        "count": 106860,
+        "count": 107015,
         "player": {
           "id": "7021",
           "name": "Rico Dowdle",
@@ -17581,7 +17581,7 @@
         }
       },
       {
-        "count": 104848,
+        "count": 105064,
         "player": {
           "id": "3321",
           "name": "Tyreek Hill",
@@ -17612,7 +17612,7 @@
         }
       },
       {
-        "count": 98160,
+        "count": 98368,
         "player": {
           "id": "6650",
           "name": "Chase McLaughlin",
@@ -17643,7 +17643,7 @@
         }
       },
       {
-        "count": 97452,
+        "count": 97704,
         "player": {
           "id": "10219",
           "name": "Chris Rodriguez",
@@ -17667,7 +17667,7 @@
         "ownership": null
       },
       {
-        "count": 97308,
+        "count": 97416,
         "player": {
           "id": "8180",
           "name": "Jalen Nailor",
@@ -17691,7 +17691,7 @@
         "ownership": null
       },
       {
-        "count": 93898,
+        "count": 93989,
         "player": {
           "id": "8161",
           "name": "Malik Willis",
@@ -17715,7 +17715,7 @@
         "ownership": null
       },
       {
-        "count": 93501,
+        "count": 93717,
         "player": {
           "id": "12718",
           "name": "Konata Mumpfield",
@@ -17739,7 +17739,7 @@
         "ownership": null
       },
       {
-        "count": 92745,
+        "count": 92916,
         "player": {
           "id": "9482",
           "name": "Michael Mayer",
@@ -17763,7 +17763,7 @@
         "ownership": null
       },
       {
-        "count": 90018,
+        "count": 90333,
         "player": {
           "id": "9511",
           "name": "Keaton Mitchell",
@@ -17794,7 +17794,7 @@
         }
       },
       {
-        "count": 87066,
+        "count": 87120,
         "player": {
           "id": "5045",
           "name": "Courtland Sutton",
@@ -17825,7 +17825,7 @@
         }
       },
       {
-        "count": 86157,
+        "count": 86283,
         "player": {
           "id": "13286",
           "name": "Jadarian Price",
@@ -17856,7 +17856,7 @@
         }
       },
       {
-        "count": 86070,
+        "count": 86225,
         "player": {
           "id": "8132",
           "name": "Tyler Allgeier",
@@ -17887,7 +17887,7 @@
         }
       },
       {
-        "count": 84744,
+        "count": 84848,
         "player": {
           "id": "11586",
           "name": "Blake Corum",
@@ -17918,7 +17918,7 @@
         }
       },
       {
-        "count": 81365,
+        "count": 81495,
         "player": {
           "id": "6819",
           "name": "Michael Pittman",
@@ -17949,7 +17949,7 @@
         }
       },
       {
-        "count": 80812,
+        "count": 80912,
         "player": {
           "id": "11628",
           "name": "Marvin Harrison",
@@ -17980,7 +17980,7 @@
         }
       },
       {
-        "count": 73928,
+        "count": 74032,
         "player": {
           "id": "11566",
           "name": "Jayden Daniels",
@@ -18011,7 +18011,7 @@
         }
       },
       {
-        "count": 72057,
+        "count": 72150,
         "player": {
           "id": "9486",
           "name": "Dontayvion Wicks",
