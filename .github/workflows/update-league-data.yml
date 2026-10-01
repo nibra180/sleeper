@@ -9,11 +9,11 @@ on:
       - 'package.json'
       - '.github/workflows/update-league-data.yml'
       - '.github/sleeper-refresh-trigger.txt'
+  # The daily 06:00 Europe/Berlin run comes from cron-job.org via workflow_dispatch.
+  # GitHub's own scheduler started runs 4 to 7 hours late in this repo.
+  # This schedule only covers days where the external trigger did not fire.
   schedule:
-    # Run once every morning at 05:07 German local time.
-    # GitHub supports IANA time zones here, so DST is handled automatically.
-    # Using :07 instead of :00 reduces the risk of scheduler delays at the top of the hour.
-    - cron: '7 5 * * *'
+    - cron: '30 6 * * *'
       timezone: 'Europe/Berlin'
 
 permissions:
@@ -35,18 +35,48 @@ jobs:
           ref: main
           fetch-depth: 0
 
+      - name: Decide whether to refresh
+        id: refresh
+        shell: bash
+        run: |
+          # Dispatches and pushes always refresh.
+          if [[ "${{ github.event_name }}" != "schedule" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          today="$(TZ=Europe/Berlin date +%F)"
+          generated_at="$(jq -r '.generatedAt // empty' data/league-state.json 2>/dev/null || true)"
+          generated_date=""
+
+          if [[ -n "$generated_at" ]]; then
+            generated_date="$(TZ=Europe/Berlin date -d "$generated_at" +%F 2>/dev/null || true)"
+          fi
+
+          if [[ "$generated_date" == "$today" ]]; then
+            echo "Sleeper data was already refreshed today ($generated_date), skipping fallback run."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "No refresh today yet, running fallback refresh."
+          echo "run=true" >> "$GITHUB_OUTPUT"
+
       - name: Set up Node.js
+        if: steps.refresh.outputs.run == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '22'
 
       - name: Fetch Sleeper data
+        if: steps.refresh.outputs.run == 'true'
         env:
           SLEEPER_LEAGUE_ID: '1400190366010863616'
           SLEEPER_USERNAME: 'nibra180'
         run: npm run fetch
 
       - name: Commit updated data
+        if: steps.refresh.outputs.run == 'true'
         shell: bash
         run: |
           git add data/league-state.json

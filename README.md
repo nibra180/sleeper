@@ -44,7 +44,22 @@ npm run fetch
 
 ## GitHub Action
 
-`.github/workflows/update-league-data.yml` läuft täglich gegen **07:30 Europe/Berlin** und berücksichtigt automatisch CET/CEST.
+`.github/workflows/update-league-data.yml` läuft täglich um **06:00 Europe/Berlin**.
+
+Den Start löst cron-job.org über die GitHub-API aus (`workflow_dispatch`). Der eingebaute GitHub-Scheduler hat geplante Läufe in diesem Repo 4 bis 7 Stunden zu spät gestartet und eignet sich deshalb nicht für eine feste Uhrzeit.
+
+Einrichtung bei cron-job.org:
+
+- URL: `https://api.github.com/repos/nibra180/sleeper/actions/workflows/update-league-data.yml/dispatches`
+- Methode: `POST`
+- Header: `Authorization: Bearer <TOKEN>`, `Accept: application/vnd.github+json`, `Content-Type: application/json`, `X-GitHub-Api-Version: 2022-11-28`
+- Body: `{"ref":"main"}`
+- Zeitplan: täglich 06:00, Zeitzone `Europe/Berlin`
+- Erwartete Antwort: `204 No Content`
+
+Der Token ist ein Fine-grained Personal Access Token, beschränkt auf dieses Repository, mit der Berechtigung **Actions: Read and write**. Er läuft ab und muss dann bei cron-job.org ersetzt werden.
+
+Als Rückfall plant der Workflow selbst einen Lauf um 06:30 Europe/Berlin. Dieser Lauf bricht ab, wenn `generatedAt` schon das heutige Datum trägt. Er greift also nur an Tagen, an denen cron-job.org nicht ausgelöst hat, und kommt wegen der GitHub-Verzögerung meist erst gegen Mittag.
 
 Die Action kann außerdem über **Actions → Update Sleeper league data → Run workflow** manuell gestartet werden.
 
